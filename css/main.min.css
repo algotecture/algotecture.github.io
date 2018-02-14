@@ -1,0 +1,157 @@
+@import url(../libs/bootstrap/dist/css/bootstrap.min.css);
+@font-face {
+  font-family: "muli";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MuliRegular/MuliRegular.eot");
+  src: url("../fonts/MuliRegular/MuliRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MuliRegular/MuliRegular.woff") format("woff"), url("../fonts/MuliRegular/MuliRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "muli";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/MuliBold/MuliBold.eot");
+  src: url("../fonts/MuliBold/MuliBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MuliBold/MuliBold.woff") format("woff"), url("../fonts/MuliBold/MuliBold.ttf") format("truetype"); }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.75;
+  font-family: "muli", sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  opacity: 1;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+a {
+  outline: none !important; }
+
+.my-page {
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.top-pannel {
+  background-color: rgba(19, 19, 19, 0.62);
+  color: #fff;
+  position: relative; }
+  .top-pannel-content {
+    position: relative;
+    padding: 10px 0;
+    z-index: 1;
+    font-size: 25px;
+    padding: 0; }
+    .top-pannel-content a {
+      text-decoration: none;
+      color: #000; }
+      .top-pannel-content a .logo-highlight {
+        color: #fff;
+        background-color: #000; }
+
+.main-content {
+  font-family: "muli", sans-serif;
+  text-align: center;
+  color: #fff;
+  margin: 80px 0; }
+  .main-content .main-logo {
+    font-size: 70px;
+    font-weight: bold; }
+    .main-content .main-logo .main-highlight {
+      color: #000;
+      background-color: rgba(255, 255, 255, 0.55); }
+  .main-content .main-description {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00FF00; }
+  .main-content .main-message {
+    color: #000;
+    font-size: 16px;
+    text-transform: lowercase;
+    background-color: rgba(255, 255, 255, 0.55);
+    margin-top: 60px; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .main-content .main-logo {
+    font-size: 45px; }
+  .main-content .main-description {
+    font-size: 25px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .main-content .main-logo {
+    font-size: 50px; }
+  .main-content .main-description {
+    font-size: 25px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .main-content .main-logo {
+    font-size: 40px; }
+  .main-content .main-description {
+    font-size: 25px; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .main-content .main-logo {
+    font-size: 35px; }
+  .main-content .main-description {
+    font-size: 22px; } }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
