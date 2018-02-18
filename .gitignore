@@ -1,0 +1,6 @@
+/node_modules/
+/dist/
+/.git/
+/**/*.psd
+/**/Thumbs.db
+/**/*.DS_Store

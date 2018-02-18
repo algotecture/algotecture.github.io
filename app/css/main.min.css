@@ -46,7 +46,6 @@ body {
   line-height: 1.75;
   font-family: "muli", sans-serif;
   overflow-x: hidden;
-  overflow-y: hidden;
   opacity: 1;
   -webkit-background-size: cover;
           background-size: cover;
@@ -56,18 +55,13 @@ body {
 a {
   outline: none !important; }
 
-.my-page {
-  -webkit-background-size: cover;
-          background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-
 .top-pannel {
   background-color: rgba(19, 19, 19, 0.62);
   color: #fff;
-  position: relative; }
+  position: fixed;
+  width: 100%;
+  top: 0; }
   .top-pannel-content {
-    position: relative;
     padding: 10px 0;
     z-index: 1;
     font-size: 25px;
@@ -75,32 +69,81 @@ a {
     .top-pannel-content a {
       text-decoration: none;
       color: #000; }
-      .top-pannel-content a .logo-highlight {
+      .top-pannel-content a > span {
         color: #fff;
-        background-color: #000; }
+        background-color: #000;
+        text-transform: lowercase; }
+  .top-pannel-box ul, .top-pannel-box li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+  .top-pannel-box li {
+    float: right;
+    padding: 0px 10px;
+    margin: 0; }
+    .top-pannel-box li a {
+      color: #fff; }
+    .top-pannel-box li:hover > a {
+      color: rgba(19, 19, 19, 0.62); }
 
 .main-content {
   font-family: "muli", sans-serif;
   text-align: center;
-  color: #fff;
-  margin: 80px 0; }
-  .main-content .main-logo {
+  color: #fff; }
+  .main-content-center {
+    width: 34%;
+    margin: auto;
+    padding: 9% 0; }
+  .main-content-logo {
     font-size: 70px;
-    font-weight: bold; }
-    .main-content .main-logo .main-highlight {
+    font-weight: bold;
+    text-transform: lowercase; }
+    .main-content-logo > span {
       color: #000;
       background-color: rgba(255, 255, 255, 0.55); }
-  .main-content .main-description {
+  .main-content-description {
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
     color: #00FF00; }
-  .main-content .main-message {
+  .main-content-message {
     color: #000;
     font-size: 16px;
     text-transform: lowercase;
     background-color: rgba(255, 255, 255, 0.55);
     margin-top: 60px; }
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.55);
+  color: #fff;
+  text-align: center;
+  font-family: "muli", sans-serif; }
+  .footer-logo {
+    font-size: 25px;
+    font-weight: bold; }
+    .footer-logo > span {
+      color: #000;
+      background-color: rgba(255, 255, 255, 0.55); }
+  .footer-description {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00FF00; }
+  .footer-message {
+    color: #000;
+    font-size: 12px; }
+    .footer-message > a {
+      text-decoration: none;
+      color: #000; }
+      .footer-message > a > span {
+        color: #fff;
+        background-color: #000;
+        text-transform: lowercase; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -109,30 +152,30 @@ a {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  .main-content .main-logo {
+  .main-content-logo {
     font-size: 45px; }
-  .main-content .main-description {
+  .main-content-description {
     font-size: 25px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  .main-content .main-logo {
+  .main-content-logo {
     font-size: 50px; }
-  .main-content .main-description {
+  .main-content-description {
     font-size: 25px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  .main-content .main-logo {
+  .main-content-logo {
     font-size: 40px; }
-  .main-content .main-description {
+  .main-content-description {
     font-size: 25px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  .main-content .main-logo {
+  .main-content-logo {
     font-size: 35px; }
-  .main-content .main-description {
+  .main-content-description {
     font-size: 22px; } }
 
 /*==========  Mobile First  ==========*/
