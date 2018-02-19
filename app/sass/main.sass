@@ -46,6 +46,23 @@ body
 a
 	outline: none!important
 
+.white-logo
+	font-size: 25px
+	font-weight: bold
+	text-transform: lowercase
+	> span
+		color: #000
+		background-color: rgba(#fff, 0.55)
+
+.black-logo
+	a
+		text-decoration: none
+		color: #000
+		> span
+			color: #fff
+			background-color: #000
+			text-transform: lowercase
+
 //Top Pannel
 .top-pannel
 	background-color: rgba(19,19,19, .62)
@@ -58,13 +75,7 @@ a
 		z-index: 1
 		font-size: 25px
 		padding: 0
-		a
-			text-decoration: none
-			color: #000
-			> span
-				color: #fff
-				background-color: #000
-				text-transform: lowercase
+
 	&-box
 		ul, li
 			padding: 0
@@ -76,6 +87,7 @@ a
 			margin: 0
 			a 
 				color: #fff
+				transition: color .25s ease
 			&:hover
 				> a
 					color: rgba(19,19,19, .62) 
@@ -88,13 +100,6 @@ a
 		width: 35%
 		margin: auto
 		padding: 9% 0
-	&-logo
-		font-size: 70px
-		font-weight: bold
-		text-transform: lowercase
-		> span
-			color: #000
-			background-color: rgba(#fff, 0.55)
 	&-description
 		font-size: 30px
 		font-weight: bold
@@ -106,6 +111,8 @@ a
 		text-transform: lowercase
 		background-color: rgba(#fff, 0.55)
 		margin-top: 60px
+	.white-logo
+		font-size: 70px
 
 .footer 
 	position: absolute
@@ -117,12 +124,6 @@ a
 	color: #fff
 	text-align: center
 	font-family: $default-font
-	&-logo
-		font-size: 25px
-		font-weight: bold
-		> span
-			color: #000
-			background-color: rgba(#fff, 0.55)
 	&-description
 		font-size: 15px
 		font-weight: bold
@@ -131,12 +132,5 @@ a
 	&-message
 		color: #000
 		font-size: 12px
-		> a
-			text-decoration: none
-			color: #000
-			> span
-				color: #fff
-				background-color: #000
-				text-transform: lowercase
 
 @import "media" // Всегда в конце
