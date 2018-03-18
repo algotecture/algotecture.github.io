@@ -1,0 +1,9 @@
+@import "_mixins/font-face";
+
+@font-face {
+    @include font-face("muli", "../fonts/MuliRegular/MuliRegular");
+}
+
+@font-face {
+    @include font-face("muli", "../fonts/MuliBold/MuliBold", 800);
+}

@@ -1,7 +1,7 @@
 /node_modules/
 /dist/
 /.git/
+/app/libs/
 /**/*.psd
 /**/Thumbs.db
 /**/*.DS_Store
-package-lock.json

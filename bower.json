@@ -1,9 +1,17 @@
 {
   "name": "algotecture",
-  "description": "",
+  "description": "web-site",
   "main": "index.js",
+  "authors": [
+    "Nuri"
+  ],
   "license": "ISC",
-  "homepage": "",
+  "keywords": [
+    "algo",
+    "algotecture"
+  ],
+  "homepage": "http://algotecture.github.io",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -12,9 +20,7 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "bootstrap": "^4.0.0",
-    "jquery": "^3.3.1",
-    "fontawesome": "^5.0.6"
+  "devDependencies": {
+    "fontawesome": "^5.0.8"
   }
 }

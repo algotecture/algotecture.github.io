@@ -1,0 +1,127 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    html {
+        font-size: 19px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    html {
+        font-size: 17px;
+    }
+    
+    .content-aside {
+        &-description {
+            font-size: 28px;
+        }
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    html {
+        font-size: 17px;
+    }
+
+    .content-aside {
+        &-description {
+            font-size: 28px;
+        }
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	html {
+        font-size: 15px;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &-aside {
+            position: relative;
+            max-width: 100%;
+            &-description {
+                font-size: 25px;
+            }
+        }
+        &-image {
+            padding-top: 30px;
+            position: relative;
+        }
+    }
+
+    .twitter-news {
+        &-content {
+            border: 1px solid #eee;
+            box-shadow: 0 0 0 0 #eee;
+        }
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    html {
+        font-size: 15px;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &-aside {
+            position: relative;
+            max-width: 100%;
+            &-description {
+                font-size: 15px;
+            }
+        }
+        &-image {
+            padding-top: 30px;
+            position: relative;
+        }
+    }
+
+    .twitter-news {
+        &-content {
+            border: 1px solid #eee;
+            box-shadow: 0 0 0 0 #eee;
+        }
+    }
+}
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	/**/
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	/**/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	/**/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	/**/
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	/**/
+}
