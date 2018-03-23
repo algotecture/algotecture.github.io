@@ -14,6 +14,8 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116006034-1"></script>
 	<script>
@@ -25,6 +27,13 @@
 
 </head>
 <body>
+	<div id="css-preloader">
+		<div class="cssload-loader">
+			<div class="cssload-inner cssload-one"></div>	 
+			<div class="cssload-inner cssload-two"></div>
+			<div class="cssload-inner cssload-three"></div>	
+		</div>
+	</div>	
 	<header>
 		<div class="top-panel">
 			<div class="top-panel-content">
@@ -86,7 +95,26 @@
 	</footer>
 
 	<link rel="stylesheet" href="css/main.min.css">
-	<script src="js/scripts.min.js"></script>
+	<script src="js/main.min.js"></script>
 
+	<!-- <script type="text/javascript">
+		let preloader = document.getElementById("css-preloader");
+
+		function fadeOut(element) {
+			element.style.opacity = 1;
+
+			let interval = setInterval(() => {
+				element.style.opacity = element.style.opacity - 0.05;
+
+				if (element.style.opacity <= 0.05) {
+					clearInterval(interval);
+					element.style.display = "none";
+				}
+			}, 16);
+		}
+			
+		window.onload = () => setTimeout(() => fadeOut(preloader), 1000);
+		
+		</script> -->
 </body>
 </html>
