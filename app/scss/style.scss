@@ -133,7 +133,7 @@ section {
 		height: 100%;
 		max-width: 50%;
 	}
-	&-image {
+	&-media {
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -168,7 +168,7 @@ section {
 	}
 }
 
-.content-image {
+.content-media {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
