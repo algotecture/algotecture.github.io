@@ -16,3 +16,12 @@
         
     window.onload = () => setTimeout(() => fadeOut(preloader), 1000);
 })(window)
+
+$(function(){
+    $('#greeting-video').click(function(){
+        $('.algo-video-popover').addClass('algo-video-popover-show');
+    });	
+    $('.algo-video-popover-close-button').click(function(){
+        $('.algo-video-popover').removeClass('algo-video-popover-show');
+    });
+});

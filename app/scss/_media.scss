@@ -7,6 +7,17 @@
     html {
         font-size: 19px;
     }
+    
+    .algo-video-popover {
+        &-content {
+            &-youtub {
+                width: 87vw;
+                height: 47.2vw;
+                max-width: 45.1rem;
+                max-height: 27rem;
+            }
+        }
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -20,6 +31,28 @@
             font-size: 28px;
         }
     }
+
+    .content-media {
+        &-play-button-wrapper {
+            top: 45%;
+            left: 40%;
+        }
+        &-play-button {
+            width: 5.0rem;
+            height: 5.0rem;
+        }
+    }
+
+    .algo-video-popover {
+        &-content {
+            &-youtub {
+                width: 87vw;
+                height: 49.1vw;
+                max-width: 45.1rem;
+                max-height: 27rem;
+            }
+        }
+    }
 }
 
 /* Small Devices, Tablets */
@@ -31,6 +64,31 @@
     .content-aside {
         &-description {
             font-size: 28px;
+        }
+    }
+
+    .content-media {
+        &-play-button-wrapper {
+            top: 47%;
+            left: 42%;
+        }
+        &-play-button {
+            width: 4.0rem;
+            height: 4.0rem;
+            &:after {
+                background-size: 23%;
+            }
+        }
+    }
+
+    .algo-video-popover {
+        &-content {
+            &-youtub {
+                width: 87vw;
+                height: 49.1vw;
+                max-width: 45.1rem;
+                max-height: 27rem;
+            }
         }
     }
 }
@@ -65,6 +123,31 @@
             box-shadow: 0 0 0 0 #eee;
         }
     }
+    
+    .content-media {
+        &-play-button-wrapper {
+            top: 48%;
+            left: 40%;
+        }
+        &-play-button {
+            width: 3.0rem;
+            height: 3.0rem;
+            &:after {
+                background-size: 28%;
+            }
+        }
+    }
+
+    .algo-video-popover {
+        &-content {
+            &-youtub {
+                width: 87vw;
+                height: 49.1vw;
+                max-width: 45.1rem;
+                max-height: 27rem;
+            }
+        }
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -95,6 +178,29 @@
         &-content {
             border: 1px solid #eee;
             box-shadow: 0 0 0 0 #eee;
+        }
+    }
+    .content-media {
+        &-play-button-wrapper {
+            top: 50%;
+            left: 40.3%;
+        }
+        &-play-button {
+            width: 2.4rem;
+            height: 2.4rem;
+            &:after {
+                background-size: 28%;
+            }
+        }
+    }
+    .algo-video-popover {
+        &-content {
+            &-youtub {
+                width: 87vw;
+                height: 49.1vw;
+                max-width: 45.1rem;
+                max-height: 27rem;
+            }
         }
     }
 }

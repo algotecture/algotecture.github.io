@@ -248,6 +248,70 @@ section {
 	}
 }
 
+.algo-video-popover {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+	left: 0;
+	z-index: 11;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    visibility: hidden;
+	opacity: 0;
+    overflow-y: hidden;
+    transition: visibility 0s ease .5s,opacity .2s ease-in-out;
+	&-content {
+		margin: auto;
+		display: flex;
+		align-content: center;
+		&-youtub {
+			border: 0;
+			width: 100vw;
+			height: 56.25vw;
+			max-width: 44.40rem;
+			max-height: 25rem;
+			border: 1px solid #eee;
+			box-shadow: 0 0 50px 10px #eee;
+		}
+	}
+	&-show {
+		visibility: visible;
+		opacity: 1;
+		z-index: 50;
+		transition: opacity .2s ease-in-out .05s
+	}
+	&-close-button {
+		position: absolute;
+		right: 32px;
+		top: 32px;
+		text-align: right;
+		width: 32px;
+		height: 32px;
+		opacity: 0.3;
+		&:hover {
+			opacity: 1;
+			cursor: pointer;
+		}
+		&:before, &:after {
+			content: ' ';
+			position: absolute;
+			left: 15px;
+			height: 30px;
+			width: 2px;
+			background-color: #333;
+		  }
+		&:before {
+			transform: rotate(45deg);
+		  }
+		&:after {
+			transform: rotate(-45deg);
+		  }
+	}
+}
+
 #custom-scrollbar {
 	&::-webkit-scrollbar {
 		width: 10px;
