@@ -67,6 +67,12 @@ gulp.task('html', () => {
         .pipe(browserSync.stream())
 })
 
+// copy all videos to the the appropriate directory
+gulp.task('video', () => {
+    return gulp.src(paths.videos.src)
+        .pipe(gulp.dest(paths.videos.dist))
+})
+
 // minify images and copy to the appropriate directory
 gulp.task('image-minify', () => {
     return gulp.src(paths.images.src, { sourcemaps: true })
@@ -75,7 +81,7 @@ gulp.task('image-minify', () => {
 })
 
 // watch for changes
-gulp.task('watch', ['fonts', 'html', 'styles', 'scripts','image-minify', 'browser-sync'], () => {
+gulp.task('watch', ['fonts', 'html', 'styles', 'scripts','image-minify', 'video', 'browser-sync'], () => {
     gulp.watch(paths.scripts.src, ['scripts'])
     gulp.watch(paths.styles.src, ['styles'])
     gulp.watch(paths.html.src, ['html']).on('change', browserSync.reload)
@@ -84,6 +90,7 @@ gulp.task('watch', ['fonts', 'html', 'styles', 'scripts','image-minify', 'browse
 // build all project
 gulp.task('build', [ 
      'image-minify',
+     'video',
      'styles', 
      'scripts', 
      'fonts', 

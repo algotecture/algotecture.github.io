@@ -23,6 +23,10 @@ const paths = {
     html: {
         src:  `${src}/*.html`,
         dist: `${dist}/`
+    },
+    videos: {
+        src:  `${src}/video/**/*`,
+        dist: `${dist}/video/`
     }
 }
 
