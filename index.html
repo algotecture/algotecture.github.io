@@ -41,8 +41,18 @@
 					<a href="/"><span>Algo</span>tecture</a>
 				</div>
 				<nav class="top-panel-nav">
-					<a href="https://medium.com/@ddemin" title="medium"><i class="fab fa-medium"></i></a>
-					<a href="https://twitter.com/algo_tecture" title="twitter"><i class="fab fa-twitter-square"></i></a>
+					<a href="https://github.com/algotecture" title="github" target="_blank">
+						<i class="fab fa-github-square"></i>
+					</a>
+					<a href="https://www.linkedin.com/company/algotecture/" title="linkedin" target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="https://medium.com/@ddemin" title="medium" target="_blank">
+						<i class="fab fa-medium"></i>
+					</a>
+					<a href="https://twitter.com/algo_tecture" title="twitter" target="_blank">
+						<i class="fab fa-twitter-square"></i>
+					</a>
 				</nav>
 			</div>
 		</div>
@@ -66,10 +76,14 @@
 				</div>				
 			</div> 			
 		</div>
-		<div class="content-image">
-			<div class="content-image-item">
-				<img src="img/rosa.jpg" />
+		<div class="content-media">
+			<div class="content-media-item">
+				<!-- <img src="img/rosa.jpg" /> -->
+				<video autoplay="" loop="" poster="img/rosa.jpg" src="video/algotecture_logo.mp4" muted=""><source type="video/mp4"></video>
 			</div>
+			<div class="content-media-play-button-wrapper" id="greeting-video">
+				<div class="content-media-play-button"></div>
+			</div>	
 		</div>
 	</section>			
 	<section class="twitter-news">
@@ -94,27 +108,15 @@
 		</div>
 	</footer>
 
+	<div class="algo-video-popover">
+		<div class="algo-video-popover-close-button"></div>
+		<div class="algo-video-popover-content">
+			<iframe src="https://www.youtube.com/embed/z1chFB-dalU" frameborder="0" allowfullscreen="" class="algo-video-popover-content-youtub"></iframe>
+		</div>
+	</div>
+
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/main.min.js"></script>
 
-	<!-- <script type="text/javascript">
-		let preloader = document.getElementById("css-preloader");
-
-		function fadeOut(element) {
-			element.style.opacity = 1;
-
-			let interval = setInterval(() => {
-				element.style.opacity = element.style.opacity - 0.05;
-
-				if (element.style.opacity <= 0.05) {
-					clearInterval(interval);
-					element.style.display = "none";
-				}
-			}, 16);
-		}
-			
-		window.onload = () => setTimeout(() => fadeOut(preloader), 1000);
-		
-		</script> -->
 </body>
 </html>
