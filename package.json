@@ -30,5 +30,14 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algotecture/algotecture.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/algotecture/algotecture.github.io/issues"
+  },
+  "homepage": "https://github.com/algotecture/algotecture.github.io#readme"
 }
