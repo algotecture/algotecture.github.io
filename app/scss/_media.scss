@@ -8,6 +8,13 @@
         font-size: 19px;
     }
     
+    .content-media {
+        &-play-button-wrapper {
+            top: 31%;
+            left: 46.7%;
+        }
+    }
+
     .algo-video-popover {
         &-content {
             &-youtub {
@@ -34,8 +41,8 @@
 
     .content-media {
         &-play-button-wrapper {
-            top: 45%;
-            left: 40%;
+            top: 36%;
+            left: 47%;
         }
         &-play-button {
             width: 5.0rem;
@@ -69,8 +76,8 @@
 
     .content-media {
         &-play-button-wrapper {
-            top: 47%;
-            left: 42%;
+            top: 37.2%;
+            left: 47.7%;
         }
         &-play-button {
             width: 4.0rem;
@@ -98,42 +105,72 @@
 	html {
         font-size: 15px;
     }
-    
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        &-aside {
-            position: relative;
-            max-width: 100%;
-            &-description {
-                font-size: 25px;
+
+    section {
+        min-height: 700px;
+    }
+
+    .main-logo {
+        span {
+            font-size: 17px;
+        }
+    }
+    .top-panel {
+        &-logo {
+            img {
+                width: 28px;
+                vertical-align: -7.5px;
+            }
+            span {
+                padding-left: 5px;
             }
         }
+        &-nav {
+            a {
+                padding: 3px;
+                img {
+                    width: 22px;
+                    padding-top: 12px
+                }
+            }
+        }
+    }
+    .content{
         &-media {
-            padding-top: 30px;
-            position: relative;
+            &-item {
+                margin-top: 0px;
+                img {
+                    max-width :  100%;
+                    height: 220px;
+                }
+            }
+            &-play-button-wrapper {
+                top: 35.7%;
+                left: 47%;
+            }
+            &-play-button {
+                width: 3.0rem;
+                height: 3.0rem;
+                &:after {
+                    background-size: 28%;
+                }
+            }
+        }
+        &-aside-description {
+            font-size: 18px;
+            padding-left: 20px;
+            line-height: unset;
         }
     }
 
     .twitter-news {
         &-content {
-            border: 1px solid #eee;
-            box-shadow: 0 0 0 0 #eee;
+            border: 1px solid $main-color;
+            box-shadow: none;
         }
-    }
-    
-    .content-media {
-        &-play-button-wrapper {
-            top: 45%;
-            left: 38%
-        }
-        &-play-button {
-            width: 3.0rem;
-            height: 3.0rem;
-            &:after {
-                background-size: 28%;
+        &-title {
+            a {
+                font-size: 18px;
             }
         }
     }
@@ -148,6 +185,10 @@
             }
         }
     }
+
+    .footer-copyright {
+        font-size: 16px;
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -155,35 +196,17 @@
     html {
         font-size: 15px;
     }
-    
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        &-aside {
-            position: relative;
-            max-width: 100%;
-            &-description {
-                font-size: 15px;
-            }
-        }
-        &-media {
-            padding-top: 30px;
-            position: relative;
-        }
-    }
-
+  
     .twitter-news {
         &-content {
             border: 1px solid #eee;
-            box-shadow: 0 0 0 0 #eee;
+            box-shadow: none;
         }
     }
     .content-media {
         &-play-button-wrapper {
-            top: 45%;
-            left: 38%
+            top: 36.4%;
+            left: 47.9%;
         }
         &-play-button {
             width: 2.4rem;

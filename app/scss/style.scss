@@ -55,29 +55,23 @@ header, section {
 section {
 	min-height: 700px;
 	position: relative;
-	border-top: 1px solid #eee;
 	background-color: $bg-color;
 }
 
-.white-logo {
-	font-size: 1.2rem;
-	font-weight: bold;
-	text-transform: lowercase;
-	> span {
-		color: $main-color;
-		background-color: $bg-color;
-	}
-}
-
-.black-logo {
+.footer-logo {
 	a {
 		color: $main-color;
 		text-decoration: none;
-		text-transform: lowercase;
-		> span {
-			color: #fff;
-			background-color: $main-color;
-		}
+		font-family: $default-font;
+	}
+}
+
+.main-logo {
+	span {
+		color: $main-color;
+		text-decoration: none;
+		font-family: "barlow-semi-bold";
+		font-size: 36px;
 	}
 }
 
@@ -92,7 +86,7 @@ section {
 	right: 0;
 	z-index: 2;
 	background-color: $bg-color;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid $main-color;
 }
 
 .top-panel {
@@ -100,85 +94,60 @@ section {
 		display: flex;
 		margin: 0 auto;
 		justify-content: space-between;
-		min-height: 45px;
+		min-height: 80px;
 		font-size: 1.2rem;
 		padding: 0 15px;
 		@extend .main-container;
 	}
-	&-title {
+	&-logo {
 		margin: auto 0;
+		img {
+			width: 50px;
+			vertical-align: -10px;
+		}
+		span {
+			padding-left: 10px;
+		}
 	}
 	&-nav {
 		margin: auto 0;
 		a {
-			color: $main-color;
-			transition: color .25s ease;
 			text-decoration: none;
 			padding: 5px;
-			&:hover {
-				color: rgba($main-color, 0.356);
+			img {
+				width: 35px;
+				padding-top: 12px
 			}
 		}
 	}
 }
 
 .content {
-	position: relative;
 	margin: 0 auto;
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 	@extend .main-container;
-	&-aside {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		max-width: 50%;
-	}
-	&-media {
-		position: absolute;
-		top: 0;
-		right: 0;
-		height: 100%;
-		max-width: 50%;
-	}
 }
 
 .content-aside {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	&-item {
-		text-align: center;
-	}
-	&-title {
-		font-size: 2.1rem;
-		font-weight: bold;
-		text-transform: lowercase;
-	}
 	&-description {
-		font-size: 1.9rem;
-		font-weight: bold;
-		text-transform: uppercase;
-		color: $accent-color;
-	}
-	&-defention {
-		color:  rgba($main-color, 0.918);
-		font-size: 0.75rem;
-		font-weight: 500;
+		text-align: center;
+		margin-top: 30px;
+		font-size: 48px;
+		line-height: 58px;
+		color: $main-color;
 	}
 }
 
 .content-media {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	&-item {
+		margin-top: 80px;
 		img {
 			max-width :  100%;
-		}
-		video {
-			max-width :  100%;
+			height: 320px;
 		}
 	}
 	&-play-button-wrapper {
@@ -186,8 +155,8 @@ section {
 		display: flex;
 		justify-content: center;
 		position: absolute;
-		top: 44%;
-		left: 42%;
+		top: 34.3%;
+		left: 46.7%;
 		z-index: 10;
 		cursor: pointer;
 	}
@@ -225,28 +194,25 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-bottom: 20px;
+
 	&-title {
 		padding-top: 10px;
-		font-size: 1.3rem;
-		font-weight: bold;
+		padding-bottom: 20px;
 		a {
-			color: $twitter-color;
+			color: $main-color;
 			transition: color .25s ease;
 			text-decoration: none;
 			&:hover {
-				color: rgba($twitter-color, 0.656);
+				color: rgba($main-color,.656)
 			}
 		}
 	}
-	&-follow {
-		padding-bottom: 20px;
-		padding-top: 5px;
-	}
 	&-content {
 		margin: 0 auto;
-		height: 550px;
+		height: 585px;
 		text-align: center;
-		border: 1px solid #eee;
+		border: 1px solid $main-color;
 		box-shadow: 0 0 50px 10px #eee;
 	}
 }
@@ -339,14 +305,15 @@ section {
 .footer {
 	padding: 1rem 0;
 	color:  rgba($main-color, 0.704);
-	border-top: 1px solid #eee;
+	border-top: 1px solid $main-color;
 	background-color: $bg-color;
+	min-height: 80px;
 	&-content {
 		text-align: center;
 		font-family: $default-font;
 	}
 	&-copyright {
-		font-size: 12px;
+		font-size: 23px;
 	}
 	a {
 		color: inherit;

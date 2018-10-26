@@ -1,9 +1,17 @@
 @import "_mixins/font-face";
 
 @font-face {
-    @include font-face("muli", "../fonts/MuliRegular/MuliRegular");
+    @include font-face("barlow", "/fonts/Barlow-Italic/Barlow-Italic");
 }
 
 @font-face {
-    @include font-face("muli", "../fonts/MuliBold/MuliBold", 800);
+    @include font-face("barlow-regular", "/fonts/Barlow-Regular/Barlow-Regular");
+}
+
+@font-face {
+    @include font-face("barlow-semi-bold", "/fonts/Barlow-SemiBold/Barlow-SemiBold", 800);
+}
+
+@font-face {
+    @include font-face("barlow-semi-italic", "/fonts/Barlow-SemiBoldItalic/Barlow-SemiBoldItalic", 800);
 }
