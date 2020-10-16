@@ -1,4 +1,4 @@
-# AlgoTecture
+# AlgoTecture GitHub io
 [AlgoTecture](https://algotecture.net/ "AlgoTecture's Homepage") radically simplifies collaborative design, construction and operation processes by providing an intelligent framework.
 
 We present here an AlgoTecture's [sandbox](https://en.wikipedia.org/wiki/Sandbox_(software_development)/) which demystifies the technologies we use to make the world as a safer and better place via sharing of an open-source content of the tech-stack. 
