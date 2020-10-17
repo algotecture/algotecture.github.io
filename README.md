@@ -5,4 +5,7 @@ We present here an AlgoTecture's [sandbox](https://en.wikipedia.org/wiki/Sandbox
 
 If you have any comments about our WEB presence, you can write us at the address post(dot)ddemin(at)gmail(dot)com — however, due to the limited number of members, we are unable to provide a direct response.
 
+https://www.crunchbase.com/organization/algotecture
+
+https://www.youtube.com/channel/UCOxPRXfyyIcKhZbH3dRLrRQ?view_as=subscriber
 
