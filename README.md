@@ -7,5 +7,5 @@ If you have any comments about our WEB presence, you can write us at the address
 
 https://www.crunchbase.com/organization/algotecture
 
-https://www.youtube.com/channel/UCOxPRXfyyIcKhZbH3dRLrRQ?view_as=subscriber
+https://www.youtube.com/@algotecture
 
